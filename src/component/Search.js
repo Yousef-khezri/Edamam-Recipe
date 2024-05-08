@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Container, Form, InputGroup, Button, Image } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 
-export default function Search({ updateData, data }) {
+export default function Search({ updateData }) {
 	const [inputSearch, setInputSearch] = useState("");
 	const navigate = useNavigate();
 
