@@ -7,7 +7,7 @@
     backdrop-filter: blur(30px);
 }
 
-.popupMenu img {
+.popupMenu .popup-img {
     width: 40%;
     border-radius: 15px;
 }

@@ -17,7 +17,8 @@ export default function PopUp({ selectedCardData }) {
 				<Modal.Body className="modal_Body">
 					<img
 						src={selectedCardData.recipe.image}
-						alt="recipe-image.png"
+						alt="recipe"
+						className="popup-img"
 					/>
 					<div className="infoBox">
 						<h1>{selectedCardData.recipe.label}</h1>
@@ -28,8 +29,8 @@ export default function PopUp({ selectedCardData }) {
 							</a>
 						</label>
 					</div>
+					<hr />
 				</Modal.Body>
-				<hr />
 				<Modal.Footer>
 					<div className="box_Info_Footer">
 						<div>

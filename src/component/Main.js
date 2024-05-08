@@ -53,7 +53,7 @@ export default function Main({ data, setSelectedCardData, addTofavoriteRecipes, 
 							onClick={() => clickedHeart(item)}
 							style={{ width: "50px", border: "none" }}
 							src="/images/heart-red.png"
-							alt="heart-red.png"
+							alt="heartRed"
 						/>
 					) : (
 						<img
@@ -61,7 +61,7 @@ export default function Main({ data, setSelectedCardData, addTofavoriteRecipes, 
 							onClick={() => clickedHeart(item)}
 							style={{ width: "50px", border: "none" }}
 							src="/images/heart.png"
-							alt="heart.png"
+							alt="heart"
 						/>
 					)}
 				</Card.Body>
