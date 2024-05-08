@@ -1,11 +1,8 @@
 import "./PopUp.css";
 import React from "react";
-import { Button, Modal } from "react-bootstrap";
+import { Modal } from "react-bootstrap";
 
 export default function PopUp({ selectedCardData }) {
-	// const handleClose = () => {
-	// 	setShow(false);
-	// };
 
 	return (
 		<div
@@ -13,14 +10,15 @@ export default function PopUp({ selectedCardData }) {
 			style={{ display: "block", position: "absolute" }}
 		>
 			<Modal.Dialog>
-				<Modal.Header
-					style={{ height: "50px" }}
-				>
+				<Modal.Header style={{ height: "50px" }}>
 					{/* <Modal.Title>Recipe</Modal.Title> */}
 				</Modal.Header>
 
 				<Modal.Body className="modal_Body">
-					<img src={selectedCardData.recipe.image} />
+					<img
+						src={selectedCardData.recipe.image}
+						alt="recipe-image.png"
+					/>
 					<div className="infoBox">
 						<h1>{selectedCardData.recipe.label}</h1>
 						<label>
@@ -62,15 +60,6 @@ export default function PopUp({ selectedCardData }) {
 							</div>
 						</div>
 					</div>
-					{/* <Button
-						className="btn_close"
-						variant="secondary"
-						style={{ backgroundColor: "red" }}
-						onClick={handleClose}
-						margin="20px"
-					>
-						X
-					</Button> */}
 				</Modal.Footer>
 			</Modal.Dialog>
 		</div>

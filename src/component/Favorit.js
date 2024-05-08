@@ -1,7 +1,7 @@
 import "./Favorit.css";
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { Button, Card } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function Favorit({
@@ -57,6 +57,7 @@ export default function Favorit({
 							onClick={() => clickedHeart(item)}
 							style={{ width: "50px", border: "none" }}
 							src="/images/heart-red.png"
+							alt="heart-red.png"
 						/>
 					) : (
 						<img
@@ -64,6 +65,7 @@ export default function Favorit({
 							onClick={() => clickedHeart(item)}
 							style={{ width: "50px", border: "none" }}
 							src="/images/heart.png"
+							alt="heart.png"
 						/>
 					)}
 				</Card.Body>
