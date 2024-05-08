@@ -1,0 +1,37 @@
+/* ----- popup ---------------------------------------------------- */
+.popupMenu {
+    width: 100%;
+    position: absolute;
+    top: 130px;
+    background-color: rgba(61, 61, 61, 0.5);
+    backdrop-filter: blur(30px);
+}
+
+.popupMenu img {
+    width: 40%;
+    border-radius: 15px;
+}
+
+.popupMenu .modal_Body{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.box_Info_Footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.info_item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn_close {
+    position: absolute;
+    top: 0;
+    margin: 10px;
+}

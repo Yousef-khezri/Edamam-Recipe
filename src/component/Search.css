@@ -1,0 +1,16 @@
+.search_Page {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("/public/images/ashp5.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.search_Page .h1-Name {
+    position: relative;
+    color: bisque;
+    top: 50%;
+    left: 7%;
+    font-size: 340%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

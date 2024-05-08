@@ -1,0 +1,79 @@
+ .navbar {
+    height: 200px;
+    background-color: black;
+    font-size: larger;
+    padding: 0 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .navbar a {
+    text-decoration: none;
+    padding: 10px 30px;
+    transition: background-color 0.5s, color 0.5s;
+}
+.navbar a:hover,
+.navbar a:focus {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 20px;
+} */
+
+/* Navbar.css */
+/* .navbar a {
+  text-decoration: none;
+  padding: 10px 30px;
+  position: relative;
+}
+
+.navbar a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(to left, transparent, #fff);
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.navbar a:hover::after,
+.navbar a:focus::after {
+  visibility: visible;
+} */
+
+/* Navbar.css */
+.navbar a {
+  text-decoration: none;
+  padding: 10px 30px;
+  position: relative;
+  transition: color 0.3s, background-color 0.3s; /* اعمال انیمیشن برای تغییر رنگ پس‌زمینه و رنگ متن */
+}
+
+.navbar a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(to left, transparent, #fff);
+  visibility: hidden;
+  transition: all 0.3s ease; /* اعمال انیمیشن برای نمایش خط */
+}
+
+.navbar a:hover,
+.navbar a:focus {
+  background-color: #007bff; /* تغییر رنگ پس‌زمینه وقتی که ماوس روی لینک است یا لینک فوکوس دارد */
+  color: #fff; /* تغییر رنگ متن وقتی که ماوس روی لینک است یا لینک فوکوس دارد */
+    border-top-left-radius: 15px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.navbar a:hover::after,
+.navbar a:focus::after {
+  visibility: visible; /* نمایش خط وقتی که ماوس روی لینک است یا لینک فوکوس دارد */
+}
+
