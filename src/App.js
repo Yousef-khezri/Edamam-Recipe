@@ -42,7 +42,7 @@ function App() {
 	// }, [favoriteRecipes]);
 
 	return (
-		<Routes>
+		<Routes className="route-background">
 			<Route path="/" element={<Navbar />}>
 				<Route path="/" element={<Home />} />
 				<Route
